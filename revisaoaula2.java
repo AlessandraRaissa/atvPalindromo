@@ -7,8 +7,8 @@ public class revisaoaula2{
 
         String r="";
         String f=JOptionPane.showInputDialog(null,"Digite uma frase: ","");
-        String f1=f.replaceAll("\\s+","");
-        String f2= new StringBuilder(f1).reverse().toString();
+        String f1=f.replaceAll("\\s+",""); //substitui os espaços 
+        String f2= new StringBuilder(f1).reverse().toString(); //pega o f1 e inverte para a string f2
         if(f1.equals(f2)){
             r="É um palindromo";
         }else{
